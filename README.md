@@ -41,6 +41,7 @@
 ## which
 
 - Check command's path
+
   ```
   $ rbenv which ruby
   # .rbenv/versions/2.2.0/bin/ruby
@@ -51,5 +52,10 @@
   $ rbenv which bundle
   # .rbenv/versions/2.2.0/bin/bundle
   ```
-  
-  ```
+
+## errors
+
+```
+An error occurred while installing pg (0.17.1), and Bundler cannot continue.
+Make sure that `gem install pg -v '0.17.1'` succeeds before bundling.
+```
