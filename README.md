@@ -35,7 +35,7 @@
 - Install and run bundle for ruby 2.2.0
   ```
   $ gem install bundle
-  $ bundle install --path vender/bundle
+  $ bundle install --path vendor/bundle
   ```
 
 ## which
