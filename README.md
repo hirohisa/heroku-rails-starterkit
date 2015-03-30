@@ -56,6 +56,7 @@
 ## Postgres
 
 - Run
+
   ```
   $ postgres -D /usr/local/var/postgres
   ```
