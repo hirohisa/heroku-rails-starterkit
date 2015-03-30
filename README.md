@@ -5,7 +5,7 @@
 - [github heroku](https://github.com/heroku/ruby-getting-started)
 - [devcenter.heroku.com](https://devcenter.heroku.com/articles/getting-started-with-ruby)
 
-## Getting started with Rails4 on Mac OS X
+## Getting started with Rails4 on Mac OS X in local
 
 - Install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
 - Install [Homebrew](https://github.com/Homebrew/homebrew) and [rbenv](https://github.com/sstephenson/rbenv)
@@ -51,6 +51,13 @@
   # rbenv: bundle: command not found
   $ rbenv which bundle
   # .rbenv/versions/2.2.0/bin/bundle
+  ```
+
+## Postgres
+
+- Run
+  ```
+  $ postgres -D /usr/local/var/postgres
   ```
 
 ## errors
