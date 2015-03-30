@@ -55,7 +55,13 @@
 
 ## errors
 
-```
-An error occurred while installing pg (0.17.1), and Bundler cannot continue.
-Make sure that `gem install pg -v '0.17.1'` succeeds before bundling.
-```
+- forget to install postgres
+
+  ```
+  An error occurred while installing pg (0.17.1), and Bundler cannot continue.
+  Make sure that `gem install pg -v '0.17.1'` succeeds before bundling.
+  ```
+
+  ```
+  $ brew install postgresql
+  ```
