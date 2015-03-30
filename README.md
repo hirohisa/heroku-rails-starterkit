@@ -42,7 +42,7 @@
 
 - Check command's path
 
-  ```
+  ```ruby
   $ rbenv which ruby
   # .rbenv/versions/2.2.0/bin/ruby
   $ rbenv which gem
