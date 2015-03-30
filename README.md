@@ -29,7 +29,7 @@
 
 - Write in Gemfile
   ```ruby
-  ruby "2.2.0"
+  ruby '2.2.0'
   ```
 
 - Install and run bundle for ruby 2.2.0
@@ -41,13 +41,15 @@
 ## which
 
 - Check command's path
-  ```ruby
+  ```
   $ rbenv which ruby
   # .rbenv/versions/2.2.0/bin/ruby
   $ rbenv which gem
   # .rbenv/versions/2.2.0/bin/gem
-  $ rbenv which bundle # failure
+  $ rbenv which bundle
   # rbenv: bundle: command not found
   $ rbenv which bundle
   # .rbenv/versions/2.2.0/bin/bundle
+  ```
+  
   ```
