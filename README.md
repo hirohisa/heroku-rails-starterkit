@@ -1,35 +1,53 @@
 # ruby-getting-started
 
-A barebones Rails app, which can easily be deployed to Heroku.
-
-This application support the [Getting Started with Ruby on Heroku](https://devcenter.heroku.com/articles/getting-started-with-ruby) article - check it out.
-
-## Running Locally
-
-Make sure you have Ruby installed.  Also, install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
-
-```sh
-$ git clone git@github.com:heroku/ruby-getting-started.git
-$ cd ruby-getting-started
-$ bundle install
-$ rake db:create db:migrate
-$ foreman start web
-```
-
-Your app should now be running on [localhost:5000](http://localhost:5000/).
-
-## Deploying to Heroku
-
-```sh
-$ heroku create
-$ git push heroku master
-$ heroku run rake db:migrate
-$ heroku open
-```
-
 ## Documentation
 
-For more information about using Ruby on Heroku, see these Dev Center articles:
+- [github heroku](https://github.com/heroku/ruby-getting-started)
+- [devcenter.heroku.com](https://devcenter.heroku.com/articles/getting-started-with-ruby)
 
-- [Ruby on Heroku](https://devcenter.heroku.com/categories/ruby)
+## Getting started with Rails4 on Mac OS X
 
+- Install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
+- Install [Homebrew](https://github.com/Homebrew/homebrew) and [rbenv](https://github.com/sstephenson/rbenv)
+  ```
+  $ brew update
+  $ brew install rbenv ruby-build
+  ```
+
+- Install ruby 2.2.0 (available 2.2.0 for Rails4)
+  ```
+  $ rbenv install -v 2.2.0
+  ```
+
+- Use ruby 2.2.0
+  ```ruby
+  $ rbenv local 2.2.0 #echo '2.2.0' > .ruby-version
+  $ echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+  $ ruby -v
+  # ruby 2.2.0p0 (2014-12-25 revision 49005) [x86_64-darwin14]
+  ```
+
+- Write in Gemfile
+  ```ruby
+  ruby "2.2.0"
+  ```
+
+- Install and run bundle for ruby 2.2.0
+  ```
+  $ gem install bundle
+  $ bundle install --path vender/bundle
+  ```
+
+## which
+
+- Check command's path
+  ```ruby
+  $ rbenv which ruby
+  # .rbenv/versions/2.2.0/bin/ruby
+  $ rbenv which gem
+  # .rbenv/versions/2.2.0/bin/gem
+  $ rbenv which bundle # failure
+  # rbenv: bundle: command not found
+  $ rbenv which bundle
+  # .rbenv/versions/2.2.0/bin/bundle
+  ```
