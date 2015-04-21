@@ -1,4 +1,4 @@
-# ruby-getting-started
+# Heroku Rails StarterKit
 
 ## Documentation
 
